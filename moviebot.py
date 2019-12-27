@@ -3,8 +3,8 @@ from telebot import apihelper
 
 # http://t.me/new_movie_list_bot
 with open('token', 'r') as f:
-    token = f.read()
-
+    token = f.read() + " "
+token = token.strip()
 
 bot = telebot.TeleBot(token)
 
