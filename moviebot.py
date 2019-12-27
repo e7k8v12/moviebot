@@ -1,9 +1,6 @@
 import telebot
 from telebot import apihelper
 
-serv = '192.169.244.80:40441'
-apihelper.proxy = {'https': 'socks5://' + serv}
-
 # http://t.me/new_movie_list_bot
 with open('token', 'r') as f:
     token = f.read()
